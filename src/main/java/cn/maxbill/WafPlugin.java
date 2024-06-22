@@ -1,21 +1,17 @@
-package run.halo.starter;
+package cn.maxbill;
 
 import org.springframework.stereotype.Component;
 import run.halo.app.plugin.BasePlugin;
 import run.halo.app.plugin.PluginContext;
 
 /**
- * <p>Plugin main class to manage the lifecycle of the plugin.</p>
- * <p>This class must be public and have a public constructor.</p>
- * <p>Only one main class extending {@link BasePlugin} is allowed per plugin.</p>
- *
- * @author guqing
+ * @author MaxBill
  * @since 1.0.0
  */
 @Component
-public class StarterPlugin extends BasePlugin {
+public class WafPlugin extends BasePlugin {
 
-    public StarterPlugin(PluginContext pluginContext) {
+    public WafPlugin(PluginContext pluginContext) {
         super(pluginContext);
     }
 
@@ -28,4 +24,5 @@ public class StarterPlugin extends BasePlugin {
     public void stop() {
         System.out.println("插件停止！");
     }
+
 }
